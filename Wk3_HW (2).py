@@ -25,10 +25,8 @@ test_scores = [ 60,  75,  82,  100, 98, 93]
 #     Test 2: 92
 #     ... etc.
 
-test_number = 1
-for score in test_scores:
-    print(f"Test {test_number}: {score}")
-    test_number += 1
+for index, score in enumerate(test_scores, start=1):
+    print(f"Test {index}: {score}")
 
 # A3. Calculate and print the following statistics:
 #     - Total number of tests
