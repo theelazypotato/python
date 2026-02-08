@@ -174,4 +174,3 @@ print(f"Improvement: {improvement: .1f}")
 #   - The difference
 #   - A message: "Improving!", "Need more practice", or "Consistent performance"
 
-# %%
