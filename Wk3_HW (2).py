@@ -42,6 +42,7 @@ total_sum = sum(test_scores)
 average = total_sum / num_tests
 print()
 # %%
+# test information
 print(f"Total Tests Taken: {num_tests}")
 print(f"Highest Score: {highest_score}")
 print(f"Lowest Score: {lowest_score}")
@@ -71,6 +72,7 @@ for i in range(len(test_scores)):
     grade_d += (60 <= current_score <= 69)
     grade_f += (current_score < 60)
 # %%        
+# number of each grade
 print(f"A: {grade_a}")
 print(f"B: {grade_b}")
 print(f"C: {grade_c}")
@@ -90,6 +92,7 @@ for i in range(len(test_scores)):
     
     curved_scores.append(final_curve)
 # %%
+# scores
 print(f"Original Scores: {test_scores}")
 print(f"Curved Scores: {curved_scores}\n")
 
@@ -125,6 +128,7 @@ recent_sum = r_sum /3
 
 improvement = recent_sum - early_sum
 # %%
+# averaage score + improvement
 print(f"Average for recent tests: {recent_sum: .1f}")
 print(f"Average for early tests: {early_sum: .1f}")
 print(f"Improvement: {improvement: .1f}")
