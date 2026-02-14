@@ -17,7 +17,7 @@ Submit this file with your solutions.
 # A1. Create a list called `test_scores` with at least 6 test scores
 #     (use realistic scores between 0-100)
 
-test_scores = [ 60,  75,  82,  100, 98, 93]
+test_scores = [60,  75,  82,  100, 98, 93]
 
 
 # A2. Use a for loop to print each score with its test number:
@@ -132,6 +132,7 @@ improvement = recent_sum - early_sum
 print(f"Average for recent tests: {recent_sum: .1f}")
 print(f"Average for early tests: {early_sum: .1f}")
 print(f"Improvement: {improvement: .1f}")
+print()
 
 # B2. Create a copy of test_scores called `what_if_scores`
 #     In the copy, replace the lowest score with 100
@@ -139,8 +140,18 @@ print(f"Improvement: {improvement: .1f}")
 #     Print how much the average changed
 #     (Make sure original test_scores is unchanged!)
 
+what_if_scores = test_scores[:]
+what_if_scores[0] = 100
+what_if_sum = sum(what_if_scores)
+num_score = len(what_if_scores)
+what_if_average = what_if_sum / num_score
+what_if_improvement = what_if_average - average
 
-
+print("what if's: ")
+print(what_if_scores)
+print(f"Average: {what_if_average: .1f}")
+print(f"Improvement: {what_if_improvement: .1f}")
+print()
 
 # B3. Create tuples for grade boundaries:
 #     a_range = (90, 100)
@@ -151,21 +162,36 @@ print(f"Improvement: {improvement: .1f}")
 #     Use these tuples to print grade cutoffs:
 #     "A: 90-100", "B: 80-89", etc.
 
+a_range = (90, 100)
+b_range = (80, 89)
+c_range = (70, 79)
+d_range = (60, 69)
 
-
+print(f"A: {a_range}")
+print(f"B: {b_range}")
+print(f"C: {c_range}")
+print(f"D: {d_range}")
+print()
 
 # B4. Create a tuple called `course_info` containing:
 #     (course_name, instructor, num_tests, average_score)
 #     Print a formatted course summary using this tuple
-
-
-
+course_info = ("Math", "Anderson", 8, 90.7)
+name, teacher, tests, grade = course_info
+print(f"Course: {name} | Instructor: {teacher} | Tests: {tests} | Avg: {grade}")
+print()
 
 # B5. Create a list of 3 course tuples (like course_info above)
 #     for different classes. Loop through and print a summary
 #     of each course.
 
+courses = [("History", "Miller", 5, 88.5),
+           ("Science", "Davis", 10, 92.3),
+           ("Art", "Butterfield", 4, 95.0)]
 
+for course in courses:
+    name, teacher, tests, grade = course
+    print(f"Course: {name} | Instructor: {teacher} | Tests: {tests} | Avg: {grade}")
 
 
 # B-STRETCH: Grade Trend Analyzer
