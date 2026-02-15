@@ -95,7 +95,11 @@ else:
 items_ordered = ["burger", "fries", "shake"]
 available_items = ["burger", "pizza", "salad", "fries", "soda"]
 
-
+for item in items_ordered:
+    if item in available_items:
+        print(f"Adding {item} to order")
+    else:
+        print(f"Sorry, {item} is not available")
 
 # A-STRETCH: Complex Order System
 # Create a full order processing system that checks:
