@@ -26,17 +26,43 @@ Submit this file with your solutions.
 #     - Members get an extra 5% off
 # Print the original total, discount, and final price
 
+meal_type = "lunch"
+is_member = True
+order_total = 12
 
+discount_percent = 0
 
+if meal_type == "breakfast":
+    discount_percent = 0.10
+elif meal_type == "lunch":
+    discount_percent = 0.15
+else:
+    discount_percent = 0
+    
+if is_member:
+    discount_percent += 0.05
+    
+discount_amount = order_total * discount_percent
+final_price = order_total - discount_amount
+
+print(f"Original Total: ${order_total: .2f}")
+print(f"Discount: ${discount_amount: .2f}")
+print(f"Final Price: ${final_price: .2f}")
+print()
 
 # A2. Create a kid's meal age checker:
 #     - Kids under 12 can order from the kid's menu
 #     - Seniors 65+ get the senior menu
 #     - Everyone else gets the regular menu
 # Print which menu the customer can order from
+age = 30
 
-
-
+if age < 12:
+    print("you can order from the kid's menu")
+elif age >= 65:
+    print("you can order from the senior menu")
+else:
+    print("you get the regular menu")
 
 # A3. Happy Hour Checker:
 #     Create variables for current_hour (24-hour format) and day_of_week
@@ -48,8 +74,14 @@ Submit this file with your solutions.
 #     - Happy Hour drinks are 50% off
 #     - Not Happy Hour: regular prices
 
+current_hour = 17 # 5:00 PM
+day_of_week = "Monday"
 
-
+# Happy Hour is M-F (4-6pm) OR all-day Sunday
+if day_of_week == "Sunday" or (day_of_week != "Saturday" and 16 <= current_hour <= 18):
+    print("It's Happy Hour, drinks are 50% off")
+else:
+    print("No Happy Hour: regular prices")
 
 # A4. Order Validator:
 #     Given these variables:
@@ -60,6 +92,8 @@ Submit this file with your solutions.
 #     - If available: print "Adding [item] to order"
 #     - If not available: print "Sorry, [item] is not available"
 
+items_ordered = ["burger", "fries", "shake"]
+available_items = ["burger", "pizza", "salad", "fries", "soda"]
 
 
 
