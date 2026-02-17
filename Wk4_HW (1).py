@@ -65,7 +65,7 @@ quantity = 3
 tax_rate = 0.07
 
 subtotal = item_price * quantity
-tax = subtotal *tax_rate
+tax = subtotal * tax_rate
 total = subtotal + tax
 
 print(f"Subtotal: {subtotal: .2f}")
