@@ -19,14 +19,11 @@ Submit this file with your solutions.
 #     age = 18
 #     temperature = 72
 #     name = "Alice"
-<<<<<<< HEAD
 
 age = 18
 temperature = 72
 name = "Alice"
 
-=======
->>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 #
 # Write and print the result of these tests:
 #     - Is age exactly 18?
@@ -34,21 +31,17 @@ name = "Alice"
 #     - Is temperature less than 80?
 #     - Is name equal to "alice" (case-insensitive)?
 
-<<<<<<< HEAD
 print(age == 18)
 print(age >= 21)
 print(temperature <= 80)
 print(name.lower() == "alice")
 print()
-=======
 
->>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 # A2. Voting Eligibility
 # Create a variable `age` with any value
 # Write an if-else statement that prints:
 #     - "You can vote!" if 18 or older
 #     - "You cannot vote yet." if under 18
-<<<<<<< HEAD
 age = 20
 
 if (age == 20):
@@ -56,10 +49,8 @@ if (age == 20):
 else:
     print("You cannot vote yet.")
 print()
-=======
 
 
->>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 # A3. Grade Checker
 # Create a variable `score` with a value 0-100
 # Write an if-elif-else chain that prints the letter grade:
@@ -68,7 +59,6 @@ print()
 #     - 70-79: C
 #     - 60-69: D
 #     - Below 60: F
-<<<<<<< HEAD
 score = 93
 
 if (score >= 90):
@@ -82,16 +72,13 @@ elif (score <= 69):
 else:
     print("F")
 print()
-=======
 
->>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 # A4. Even or Odd
 # Create a variable `number` with any integer
 # Use the modulo operator (%) to determine if it's even or odd
 # Print "[number] is even" or "[number] is odd"
 
-<<<<<<< HEAD
 number = 50
 
 if number % 2 == 0:
@@ -99,8 +86,6 @@ if number % 2 == 0:
 else:
     print(f"{number} is odd")
 print()
-=======
->>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 # A5. Ticket Pricing
 # Create a variable `age` for a movie theater visitor
@@ -111,7 +96,6 @@ print()
 #     - 65+: $10 (senior discount)
 # Print the ticket price
 
-<<<<<<< HEAD
 age = 23
 
 if (age <= 4):
@@ -123,9 +107,7 @@ elif (age <= 64):
 else:
     print("$10 (Senior Discount)")
 print()
-=======
 
->>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 
 # ============================================================
@@ -142,7 +124,6 @@ print()
 # Use `and` to check if BOTH username AND password match
 # Print "Login successful!" or "Invalid credentials"
 
-<<<<<<< HEAD
 username = "admin"
 password = "secret123"
 input_user = "admin"
@@ -153,15 +134,12 @@ if input_user == username and input_pass == password:
 else:
     print("Invalid credentials")
 print()
-=======
->>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 # B2. Weekend or Weekday
 # Create a variable `day` with a day name (e.g., "Monday")
 # Use `or` to check if it's a weekend (Saturday or Sunday)
 # Print "It's the weekend!" or "It's a weekday."
 
-<<<<<<< HEAD
 day = "Friday"
 
 if (day == "Saturday" or day == "Sunday"):
@@ -169,15 +147,12 @@ if (day == "Saturday" or day == "Sunday"):
 else:
     print("It's a weekday")
 print()
-=======
 
->>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 # B3. Amusement Park Ride
 # Create variables:
 #     height = 48  (inches)
 #     age = 10
 #
-<<<<<<< HEAD
 
 height = 62
 age = 19
@@ -188,16 +163,13 @@ age = 19
 if (height >= 48 and age >= 8):
     print("They are elligible to ride")
 print()
-=======
 # A ride requires: height >= 48 AND age >= 8
 # Check both conditions and print whether they can ride
 
->>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 # B4. Menu Availability
 # Create a list of available toppings:
 #     available = ["pepperoni", "mushrooms", "onions", "cheese", "olives"]
-<<<<<<< HEAD
 
 availiable = ["peppers", "mushrooms", "tomatoes", "lettuce", "bacon"]
 
@@ -217,7 +189,6 @@ print()
 is_member = True
 years_member = 7
 vip_pass = True
-=======
 #
 # Create a variable for the requested topping
 # Use `in` to check if it's available
@@ -228,7 +199,6 @@ vip_pass = True
 # Create variables:
 #     is_member = True
 #     years_member = 3
->>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 #
 # VIP access requires: is_member AND at least 5 years
 # Also grant access if they have a vip_pass = True
@@ -236,15 +206,12 @@ vip_pass = True
 # Use `and` / `or` to check access
 # Print whether they have VIP access
 
-<<<<<<< HEAD
 if (is_member and years_member >= 5) or vip_pass:
     print("VIP Access Granted")
 else:
     print("Standard Access")
 print()
-=======
 
->>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 
 # ============================================================
@@ -252,7 +219,6 @@ print()
 # ============================================================
 
 # C1. Filtering a List
-<<<<<<< HEAD
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # Use a for loop with an if statement to print only even numbers
 
@@ -278,7 +244,6 @@ print()
 students = ["Alice", "Bob", "Charlie", "Diana", "Eve"]
 index = students.index("Charlie")
 
-=======
 # Given: numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # Use a for loop with an if statement to print only even numbers
 
@@ -291,12 +256,10 @@ index = students.index("Charlie")
 
 # C3. Finding in a List
 # Given: students = ["Alice", "Bob", "Charlie", "Diana", "Eve"]
->>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 # Search for "Charlie" in the list
 # Print "Found!" or "Not found"
 # Also print the position if found
 
-<<<<<<< HEAD
 if "Charlie" in students:
     print("Found!")
     print(index)
@@ -306,16 +269,13 @@ print()
 scores = [88, 92, 67, 75, 84, 91, 59, 78, 95, 82]
 passes = 0
 fails = 0
-=======
 
 # C4. Categorizing Items
 # Given: scores = [88, 92, 67, 75, 84, 91, 59, 78, 95, 82]
->>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 # Loop through and categorize each score:
 #     - Print "Pass" if 60 or above
 #     - Print "Fail" if below 60
 # Also count total passes and fails
-<<<<<<< HEAD
 for score in scores:
     if (score >= 60):
         print("Pass")
@@ -330,28 +290,23 @@ print()
 
 # C5. Processing Special Cases
 usernames = ["admin", "alice", "bob", "guest", "root", "charlie"]
-=======
 
 
 # C5. Processing Special Cases
 # Given: usernames = ["admin", "alice", "bob", "guest", "root", "charlie"]
->>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 # Loop through the list:
 #     - If "admin" or "root": print "[name] - ADMINISTRATOR"
 #     - If "guest": print "[name] - LIMITED ACCESS"
 #     - Otherwise: print "[name] - standard user"
 
-<<<<<<< HEAD
 if (name == "admin" or name == "root"):
     print(f"{name} - ADMINISTRATION")
 elif (name == "guest"):
     print(f"{name} - LIMITED ACCESS")
 else:
     print(f"{name} - STANDARD USER")
-=======
 
 
->>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 # ============================================================
 # STRETCH: Comprehensive Problem
