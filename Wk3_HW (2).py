@@ -193,8 +193,6 @@ for course in courses:
     print(f"Course: {name} | Instructor: {teacher} | Tests: {tests} | Avg: {grade}")
 
 
-
-
 # B-STRETCH: Grade Trend Analyzer
 # Using slices, compare the first half of test_scores to the second half.
 # Calculate the average for each half.
