@@ -160,16 +160,45 @@ print()
 # ============================================================
 
 # B1. Grade Distribution
-Given: scores = [85, 92, 78, 65, 95, 88, 72, 58, 90, 83, 67, 91]
+scores = [85, 92, 78, 65, 95, 88, 72, 58, 90, 83, 67, 91]
+
+count_a = 0
+count_b = 0
+count_c = 0
+count_d = 0
+count_f = 0
 #
 # Loop through and count how many scores fall into each grade:
 #     A (90-100), B (80-89), C (70-79), D (60-69), F (below 60)
 #
 # Print the count for each grade and the class average
 
+for score in scores:
+    if score >= 90:
+        count_a += 1
+    elif score >= 80:
+        count_b += 1
+    elif score >= 70:
+        count_c += 1
+    elif score >= 60:
+        count_d += 1
+    else:
+        count_f += 1
 
+average = sum(scores) / len(scores)
+
+print(f"A: {count_a}")
+print(f"B: {count_b}")
+print(f"C: {count_c}")
+print(f"D: {count_d}")
+print(f"F: {count_f}")
+print(f"Class Average: {average:.1f}")
+print()
 # B2. Filter and Transform
-# Given: numbers = [-5, 12, -3, 8, -1, 15, 7, -9, 20, 3]
+numbers = [-5, 12, -3, 8, -1, 15, 7, -9, 20, 3]
+positive_numbers = [n for n in numbers if n > 0]
+negative_numbers = [abs(n) for n in numbers if n < 0]
+big_numbers = [n for n in numbers if abs(n) > 10]
 #
 # Create three new lists:
 #     - positive_numbers: only positive numbers
@@ -178,10 +207,15 @@ Given: scores = [85, 92, 78, 65, 95, 88, 72, 58, 90, 83, 67, 91]
 #
 # Print all three lists
 
-
+print(f"Positives: {positive_numbers}")
+print(f"Negatives as Pos: {negative_numbers}")
+print(f"Absolute > 10: {big_numbers}")
+print()
 # B3. Find Extremes
-# Given: temperatures = [72, 68, 75, 80, 65, 82, 71, 78, 69, 85]
-#
+temperatures = [72, 68, 75, 80, 65, 82, 71, 78, 69, 85]
+
+highest = temperatures[0]
+highest_index = 0
 # WITHOUT using min() or max(), find:
 #     - The highest temperature
 #     - The lowest temperature
@@ -189,16 +223,40 @@ Given: scores = [85, 92, 78, 65, 95, 88, 72, 58, 90, 83, 67, 91]
 #
 # Print: "Highest: 85 on day 10" (using 1-based day numbers)
 
+for i in range(len(temperatures)):
+    if temperatures[i] > highest:
+        highest = temperatures[i]
+        highest_index = i
+
+print(f"Highest: {highest} on day {highest_index + 1}")
+print()
 
 # B4. Duplicate Finder
-# Given: names = ["Alice", "Bob", "Charlie", "Alice", "Diana", "Bob", "Eve"]
+names = ["Alice", "Bob", "Charlie", "Alice", "Diana", "Bob", "Eve"]
+seen = []
+duplicates = []
 #
 # Find and print all names that appear more than once
 # Also print how many times each duplicate appears
 
+for name in names:
+    if name in seen:
+        if name not in duplicates:
+            duplicates.append(name)
+    else:
+        seen.append(name)
 
+for dup in duplicates:
+    count = names.count(dup)
+    print(f"{dup} appeared {count} times")
+print()
 # B5. Range Checker
-# Given: values = [15, 42, 8, 67, 23, 91, 5, 38, 72, 19]
+values = [15, 42, 8, 67, 23, 91, 5, 38, 72, 19]
+
+low_count = 0  # < 20
+medium_count = 0  # 20-50
+high_count = 0  # 51-80
+very_high_count = 0 # > 80
 #
 # Categorize each value:
 #     - "low" if < 20
@@ -208,8 +266,22 @@ Given: scores = [85, 92, 78, 65, 95, 88, 72, 58, 90, 83, 67, 91]
 #
 # Create a summary showing count in each category
 
+for val in values:
+    if val < 20:
+        low_count += 1
+    elif val <= 50:
+        medium_count += 1
+    elif val <= 80:
+        high_count += 1
+    else:
+        very_high_count += 1
 
-
+print("Range Summary: ")
+print(f"Low: {low_count}")
+print(f"Medium: {medium_count}")
+print(f"High: {high_count}")
+print(f"Very High: {very_high_count}")
+print()
 
 # ============================================================
 # PART C: Putting It All Together
@@ -217,10 +289,11 @@ Given: scores = [85, 92, 78, 65, 95, 88, 72, 58, 90, 83, 67, 91]
 
 # C1. Shopping Cart Discount
 # Given:
-#     cart_total = 125.00
-#     is_member = True
-#     coupon_code = "SAVE20"
-#     valid_coupons = ["SAVE10", "SAVE20", "HOLIDAY"]
+cart_total = 125.00
+is_member = True
+coupon_code = "SAVE20"
+valid_coupons = ["SAVE10", "SAVE20", "HOLIDAY"]
+shipping_fee = 8.99
 #
 # Apply discounts:
 #     - Members get 5% off
@@ -230,9 +303,37 @@ Given: scores = [85, 92, 78, 65, 95, 88, 72, 58, 90, 83, 67, 91]
 #
 # Print itemized receipt with all discounts and final total
 
+# Member Discount (5% off)
+if is_member:
+    member_discount = cart_total * 0.05
+    cart_total -= member_discount
+    print(f"Member Discount Applied: -${member_discount:.2f}")
 
+# Coupon Discount
+if coupon_code in valid_coupons:
+    if coupon_code == "SAVE10":
+        cart_total -= 10
+    elif coupon_code == "SAVE20":
+        cart_total -= 20
+    elif coupon_code == "HOLIDAY":
+        cart_total *= 0.85  # 15% off
+    print(f"Coupon {coupon_code} Applied!")
+
+# Shipping Fee
+if cart_total > 100:
+    shipping_fee = 0
+    print("Free Shipping Applied!")
+else:
+    cart_total += shipping_fee
+
+print(f"Final Total: ${cart_total:.2f}")
+print()
 # C2. Divisibility Analyzer
-# Given: numbers = [12, 15, 20, 25, 30, 35, 42, 50, 60, 77]
+numbers = [12, 15, 20, 25, 30, 35, 42, 50, 60, 77]
+
+fizzbuzz_count = 0
+fizz_count = 0
+buzz_count = 0
 #
 # For each number, check:
 #     - Is it divisible by both 3 AND 5? Print "FizzBuzz"
@@ -242,9 +343,31 @@ Given: scores = [85, 92, 78, 65, 95, 88, 72, 58, 90, 83, 67, 91]
 #
 # Also count how many FizzBuzz, Fizz, and Buzz you found
 
+for num in numbers:
+    # check both first
+    if num % 3 == 0 and num % 5 == 0:
+        print("FizzBuzz")
+        fizzbuzz_count += 1
+    # check individual divisibility
+    elif num % 3 == 0:
+        print("Fizz")
+        fizz_count += 1
+    elif num % 5 == 0:
+        print("Buzz")
+        buzz_count += 1
+    # otherwise print the number
+    else:
+        print(num)
 
+print(f"\nSummary: ")
+print(f"FizzBuzz found: {fizzbuzz_count}")
+print(f"Fizz found: {fizz_count}")
+print(f"Buzz found: {buzz_count}")
+print()
 # C3. Number Classifier
-# Given: values = [2, 4, 7, 10, 13, 15, 21, 25, 29, 30]
+values = [2, 4, 7, 10, 13, 15, 21, 25, 29, 30]
+primes = []
+composites = []
 #
 # For each number, determine if it's prime or composite.
 # Use a boolean flag and loop (the pattern from class!).
@@ -255,7 +378,25 @@ Given: scores = [85, 92, 78, 65, 95, 88, 72, 58, 90, 83, 67, 91]
 #     - The list of composites
 #     - How many of each
 
+for num in values:
+    if num < 2:
+        composites.append(num)
+        continue
+    
+    is_prime = True
+    
+    for i in range(2, num):
+        if num % i == 0:
+            is_prime = False
+            break
+    
+    if is_prime:
+        primes.append(num)
+    else:
+        composites.append(num)
 
+print(f"Primes: {primes} (Total: {len(primes)})")
+print(f"Composites: {composites} (Total: {len(composites)})")
 
 
 # ============================================================
