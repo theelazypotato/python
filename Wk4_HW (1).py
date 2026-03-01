@@ -21,6 +21,19 @@ Submit this file with your solutions.
 #     - is_fulltime (boolean)
 #     Print each with a label
 
+<<<<<<< HEAD
+=======
+name = "Raina"
+age = 19
+gpa = 2.7
+is_fulltime = True
+
+print(f"Student Name: {name}")
+print(f"Age: {age}")
+print(f"GPA: {gpa}")
+print(f"Fulltime: {is_fulltime}")
+print()
+>>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 # A2. Using the name variable, print:
 #     - The name in all uppercase
@@ -28,11 +41,26 @@ Submit this file with your solutions.
 #     - The name with proper title case
 #     - The number of characters in the name
 
+<<<<<<< HEAD
+=======
+print(name.upper())
+print(name.lower())
+print(name.title())
+print(len(name))
+print()
+>>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 # A3. Create a variable `course` with value "  CSCI 120: Intro to Programming  "
 #     Print it with leading/trailing whitespace removed
 #     Print just the course number (120) using string methods or slicing
 
+<<<<<<< HEAD
+=======
+course = "  CSCI 120: Intro to Programming  "
+print(course.strip())
+print(course[7:10])
+print()
+>>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 # A4. Create variables for a price calculation:
 #     - item_price = 29.99
@@ -41,7 +69,22 @@ Submit this file with your solutions.
 #     Calculate and print the subtotal, tax, and total
 #     Format all money values to 2 decimal places
 
+<<<<<<< HEAD
 
+=======
+item_price = 29.99
+quantity = 3
+tax_rate = 0.07
+
+subtotal = item_price * quantity
+tax = subtotal * tax_rate
+total = subtotal + tax
+
+print(f"Subtotal: {subtotal: .2f}")
+print(f"Tax: {tax: .2f}")
+print(f"Total: {total: .2f}")
+print()
+>>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 
 # ============================================================
@@ -51,6 +94,12 @@ Submit this file with your solutions.
 # B1. Create a list called `courses` with 5 course names you're taking
 #     Print the first course and the last course
 
+<<<<<<< HEAD
+=======
+courses = ["Python", "Urban Studies", "Essentials in Film", "Superheroes and American Society"]
+print(courses[0])
+print(courses[3])
+>>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 # B2. Make the following changes to your courses list:
 #     - Add a new course to the end
@@ -58,12 +107,32 @@ Submit this file with your solutions.
 #     - Remove one course by name
 #     - Print the updated list after each change
 
+<<<<<<< HEAD
+=======
+courses.append("Intro to Music")
+print(courses)
+courses.insert(2, "Digital Art")
+print(courses)
+del courses[3]
+print(courses)
+print()
+>>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 # B3. Create a list of 5 numbers (any numbers you choose)
 #     - Sort the list and print it
 #     - Reverse the sorted list and print it
 #     - Print the original list (was it changed?)
 
+<<<<<<< HEAD
+=======
+num_list = [7, 22, 81, 99, 45]
+num_list.sort()
+print(f"Sorted: {num_list}") # sorted
+num_list.reverse()
+print(f"Reversed: {num_list}") # reversed
+print(f"Original List: {num_list}") # changed
+print()
+>>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 # B4. Create two lists:
 #     - breakfast_foods with 3 items
@@ -71,8 +140,18 @@ Submit this file with your solutions.
 #     Combine them into a new list called all_foods
 #     Print all_foods and its length
 
+<<<<<<< HEAD
 
 
+=======
+breakfast_foods = ["french toast", "scrambled eggs", "orange juice"]
+lunch_foods = ["cheeseburger", "fries", "rootbeer"]
+
+all_foods = breakfast_foods + lunch_foods
+print(f"All Foods: {all_foods}")
+print(f"Amount:", len(all_foods))
+print()
+>>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 # ============================================================
 # PART C: Loops and Ranges (Chapter 4 Review)
@@ -80,12 +159,35 @@ Submit this file with your solutions.
 
 # C1. Use a for loop to print numbers 1 through 10
 
+<<<<<<< HEAD
+=======
+# start at 1, stop before 11
+for value in range(1, 11):
+    print(value)
+print()
+>>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 # C2. Use range() to create and print:
 #     - Even numbers from 2 to 20
 #     - Countdown from 10 to 1
 #     - Multiples of 5 from 5 to 50
 
+<<<<<<< HEAD
+=======
+# start at 2, stop before 21, count by 2
+even_numbers = list(range(2, 21, 2))
+print(even_numbers)
+
+# start at 10, stop before 0, countdown by 1
+countdown = list(range(10, 0, -1))
+print(countdown)
+
+# start at 5, stop before 51, count by 5
+multiples = list(range(5, 51, 5))
+print(multiples)
+
+print()
+>>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 # C3. Given this list:
 #     temperatures = [72, 68, 75, 71, 80, 78, 74]
@@ -95,13 +197,38 @@ Submit this file with your solutions.
 #     - Calculate and print the sum
 #     - Calculate and print the average
 
+<<<<<<< HEAD
 
+=======
+temperatures = [72, 68, 75, 71, 80, 78, 74]
+total_sum = 0
+
+for temp in temperatures:
+    print(temp)
+    total_sum += temp
+
+average = total_sum / len(temperatures)
+print(f"Sum: {total_sum}")
+print(f"Avg: {average}")
+print()
+>>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 # C4. Use a list comprehension to create:
 #     - A list of squares from 1 to 10 (1, 4, 9, 16, ...)
 #     - A list where each temperature is converted to Celsius
 #       Formula: (temp - 32) * 5/9
 
+<<<<<<< HEAD
 
+=======
+# list comprehension for squares (1 to 10)
+squares = [value**2 for value in range(1, 11)]
+print(f"Squares: {squares}")
+
+# list comprehension for F - C conversion
+celsius_temps = [(temp-32) * 5/9 for temp in temperatures]
+print(f"Celsius: {[round(c, 1) for c in celsius_temps]}")
+print()
+>>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 # C5. Given this list of names:
 #     students = ["alice", "bob", "charlie", "diana"]
 #
@@ -111,7 +238,15 @@ Submit this file with your solutions.
 #     3. Charlie
 #     4. Diana
 
+<<<<<<< HEAD
 
+=======
+students = ["alice", "bob", "charlie", "diana"]
+
+for i, student in enumerate(students, start=1):
+    print(f"{i}. {student.title()}")
+print()
+>>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 
 # ============================================================
@@ -127,25 +262,66 @@ Submit this file with your solutions.
 #     - Summer months (Jun-Aug)
 #     - Last quarter (Oct-Dec)
 
+<<<<<<< HEAD
+=======
+months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+            "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+print(f"First Quarter: {months[0:3]}")
+print(f"Summer Months: {months[5:8]}")
+print(f"Last Quarter: {months[9:12]}")
+print()
+>>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 # D2. Create a list of 8 numbers
 #     - Print the first half and second half using slices
 #     - Calculate the average of each half
 #     - Print the average of each half
 
+<<<<<<< HEAD
 
+=======
+num = [14, 33, 88, 58, 42, 68, 91, 29]
+
+print(f"First half: {num[0:4]}")
+print(f"Second half: {num[4:8]}")
+
+average = sum(num) / len(num)
+
+print(f"Average: {average: .2f}")
+print()
+>>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 # D3. Demonstrate correct list copying:
 #     - Create a list called original with 5 items
 #     - Create a proper copy called backup using slicing
 #     - Modify original (add an item)
 #     - Print both lists to show backup wasn't changed
 
+<<<<<<< HEAD
+=======
+original = ["Comic Book", "Phone", "Mouse", "Pen", "Rubber Duck"]
+copy = original[:]
+
+original.append("Energy Drink")
+
+print(f"Original: {original}")
+print(f"Copy: {copy}")
+print()
+>>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 # D4. Create tuples for:
 #     - Your birthday as (month, day, year)
 #     - A location as (city, state, zip_code)
 #     - Print formatted strings using each tuple
 
+<<<<<<< HEAD
+=======
+birthday = ("March", 17, 2006)
+location = ("North Adams", "MA", "01247")
+
+print(f"My birthday is {birthday[0]} {birthday[1]}th, {birthday[2]}.")
+print(f"I am located in {location[0]}, {location[1]} {location[2]}")
+>>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 # D5. Create a list of 3 tuples, where each tuple contains:
 #     (student_name, test1_score, test2_score, test3_score)
@@ -155,7 +331,20 @@ Submit this file with your solutions.
 #     - All three scores
 #     - Average score
 
+<<<<<<< HEAD
 
+=======
+students = [
+    ("Sarah", 85, 92, 78),
+    ("Quinn", 90, 88, 94),
+    ("John", 76, 80, 82)
+]
+
+for student in students:
+    name, s1, s2, s3 = student
+    average = (s1 + s2 + s3) / 3
+    print(f"{name} has an average score of {average:.2f}")
+>>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 
 # ============================================================
@@ -179,5 +368,8 @@ Submit this file with your solutions.
 #    (course_name, num_assignments, average, total_points)
 #
 # 6. Print a nicely formatted grade report
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
