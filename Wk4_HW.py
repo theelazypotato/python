@@ -26,6 +26,10 @@ Submit this file with your solutions.
 #     - Members get an extra 5% off
 # Print the original total, discount, and final price
 
+<<<<<<< HEAD
+
+
+=======
 meal_type = "lunch"
 is_member = True
 order_total = 12
@@ -49,12 +53,18 @@ print(f"Original Total: ${order_total: .2f}")
 print(f"Discount: ${discount_amount: .2f}")
 print(f"Final Price: ${final_price: .2f}")
 print()
+>>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 # A2. Create a kid's meal age checker:
 #     - Kids under 12 can order from the kid's menu
 #     - Seniors 65+ get the senior menu
 #     - Everyone else gets the regular menu
 # Print which menu the customer can order from
+<<<<<<< HEAD
+
+
+
+=======
 age = 30
 
 if age < 12:
@@ -63,6 +73,7 @@ elif age >= 65:
     print("you can order from the senior menu")
 else:
     print("you get the regular menu")
+>>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 # A3. Happy Hour Checker:
 #     Create variables for current_hour (24-hour format) and day_of_week
@@ -74,6 +85,10 @@ else:
 #     - Happy Hour drinks are 50% off
 #     - Not Happy Hour: regular prices
 
+<<<<<<< HEAD
+
+
+=======
 current_hour = 17 # 5:00 PM
 day_of_week = "Monday"
 
@@ -82,6 +97,7 @@ if day_of_week == "Sunday" or (day_of_week != "Saturday" and 16 <= current_hour 
     print("It's Happy Hour, drinks are 50% off")
 else:
     print("No Happy Hour: regular prices")
+>>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 # A4. Order Validator:
 #     Given these variables:
@@ -92,6 +108,10 @@ else:
 #     - If available: print "Adding [item] to order"
 #     - If not available: print "Sorry, [item] is not available"
 
+<<<<<<< HEAD
+
+
+=======
 items_ordered = ["burger", "fries", "shake"]
 available_items = ["burger", "pizza", "salad", "fries", "soda"]
 
@@ -100,6 +120,7 @@ for item in items_ordered:
         print(f"Adding {item} to order")
     else:
         print(f"Sorry, {item} is not available")
+>>>>>>> 633fc8fc0bf75e8286502ade44aaeb9dd11bd63f
 
 # A-STRETCH: Complex Order System
 # Create a full order processing system that checks:

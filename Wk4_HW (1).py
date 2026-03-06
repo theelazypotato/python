@@ -60,6 +60,7 @@ print()
 #     Calculate and print the subtotal, tax, and total
 #     Format all money values to 2 decimal places
 
+
 item_price = 29.99
 quantity = 3
 tax_rate = 0.07
@@ -118,6 +119,8 @@ print()
 #     Combine them into a new list called all_foods
 #     Print all_foods and its length
 
+
+
 breakfast_foods = ["french toast", "scrambled eggs", "orange juice"]
 lunch_foods = ["cheeseburger", "fries", "rootbeer"]
 
@@ -164,6 +167,7 @@ print()
 #     - Calculate and print the sum
 #     - Calculate and print the average
 
+
 temperatures = [72, 68, 75, 71, 80, 78, 74]
 total_sum = 0
 
@@ -179,6 +183,7 @@ print()
 #     - A list of squares from 1 to 10 (1, 4, 9, 16, ...)
 #     - A list where each temperature is converted to Celsius
 #       Formula: (temp - 32) * 5/9
+
 
 # list comprehension for squares (1 to 10)
 squares = [value**2 for value in range(1, 11)]
@@ -196,6 +201,7 @@ print()
 #     2. Bob
 #     3. Charlie
 #     4. Diana
+
 
 students = ["alice", "bob", "charlie", "diana"]
 
@@ -229,6 +235,7 @@ print()
 #     - Print the first half and second half using slices
 #     - Calculate the average of each half
 #     - Print the average of each half
+
 
 num = [14, 33, 88, 58, 42, 68, 91, 29]
 
@@ -273,6 +280,7 @@ print(f"I am located in {location[0]}, {location[1]} {location[2]}")
 #     - All three scores
 #     - Average score
 
+
 students = [
     ("Sarah", 85, 92, 78),
     ("Quinn", 90, 88, 94),
@@ -306,3 +314,5 @@ for student in students:
 #    (course_name, num_assignments, average, total_points)
 #
 # 6. Print a nicely formatted grade report
+
+

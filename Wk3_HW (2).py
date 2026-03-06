@@ -17,7 +17,7 @@ Submit this file with your solutions.
 # A1. Create a list called `test_scores` with at least 6 test scores
 #     (use realistic scores between 0-100)
 
-test_scores = [60,  75,  82,  100, 98, 93]
+test_scores = [ 60,  75,  82,  100, 98, 93]
 
 
 # A2. Use a for loop to print each score with its test number:
@@ -42,7 +42,6 @@ total_sum = sum(test_scores)
 average = total_sum / num_tests
 print()
 # %%
-# test information
 print(f"Total Tests Taken: {num_tests}")
 print(f"Highest Score: {highest_score}")
 print(f"Lowest Score: {lowest_score}")
@@ -72,7 +71,6 @@ for i in range(len(test_scores)):
     grade_d += (60 <= current_score <= 69)
     grade_f += (current_score < 60)
 # %%        
-# number of each grade
 print(f"A: {grade_a}")
 print(f"B: {grade_b}")
 print(f"C: {grade_c}")
@@ -92,7 +90,6 @@ for i in range(len(test_scores)):
     
     curved_scores.append(final_curve)
 # %%
-# scores
 print(f"Original Scores: {test_scores}")
 print(f"Curved Scores: {curved_scores}\n")
 
@@ -128,11 +125,9 @@ recent_sum = r_sum /3
 
 improvement = recent_sum - early_sum
 # %%
-# averaage score + improvement
 print(f"Average for recent tests: {recent_sum: .1f}")
 print(f"Average for early tests: {early_sum: .1f}")
 print(f"Improvement: {improvement: .1f}")
-print()
 
 # B2. Create a copy of test_scores called `what_if_scores`
 #     In the copy, replace the lowest score with 100
@@ -152,6 +147,7 @@ print(what_if_scores)
 print(f"Average: {what_if_average: .1f}")
 print(f"Improvement: {what_if_improvement: .1f}")
 print()
+
 
 # B3. Create tuples for grade boundaries:
 #     a_range = (90, 100)
@@ -173,13 +169,16 @@ print(f"C: {c_range}")
 print(f"D: {d_range}")
 print()
 
+
 # B4. Create a tuple called `course_info` containing:
 #     (course_name, instructor, num_tests, average_score)
 #     Print a formatted course summary using this tuple
+
 course_info = ("Math", "Anderson", 8, 90.7)
 name, teacher, tests, grade = course_info
 print(f"Course: {name} | Instructor: {teacher} | Tests: {tests} | Avg: {grade}")
 print()
+
 
 # B5. Create a list of 3 course tuples (like course_info above)
 #     for different classes. Loop through and print a summary
@@ -204,3 +203,4 @@ for course in courses:
 #   - The difference
 #   - A message: "Improving!", "Need more practice", or "Consistent performance"
 
+# %%
