@@ -24,9 +24,14 @@ Instructions:
 # Then print each value using the keys.
 
 # YOUR CODE HERE:
+student = {"name": "Raina", "major": "Undeclared", "year": 2, "gpa": 2.8}
 
+print(student["name"])
+print(student["major"])
+print(student["year"])
+print(student["gpa"])
 
-
+print()
 
 # Exercise 2: Create a dictionary called 'favorite_foods' where:
 # - Keys are names of 3 friends
@@ -35,8 +40,12 @@ Instructions:
 
 # YOUR CODE HERE:
 
+favorite_foods = {"Vic": "burger", "Sam": "pasta", "Sprite": "pizza"}
 
+for name, food in favorite_foods.items():
+    print(f"{name.title()}'s favorite food is {food.title()}.")
 
+print()
 
 # Exercise 3: Create a dictionary called 'course_grades' with at least 4 courses
 # and their letter grades (e.g., 'CSCI 120': 'A', 'MATH 101': 'B+')
@@ -44,8 +53,12 @@ Instructions:
 
 # YOUR CODE HERE:
 
+course_grades = {"CSCI 120": "A+", "HIST 260": "A", "ENGL 210": "A+", "IDST 251": "A-"}
 
+for course, grade in course_grades.items():
+    print(f"{course}: {grade}")
 
+print()
 
 # ==============================================================
 # PART 2: USER INPUT (Chapter 7)
@@ -56,8 +69,10 @@ Instructions:
 
 # YOUR CODE HERE:
 
+favorite_color = input("What's your favorite color: ")
+print(f"\nGreat choice! {favorite_color} is a nice color.")
 
-
+print()
 
 # Exercise 5: Ask the user for their age using input().
 # Convert it to an integer using int().
@@ -65,8 +80,17 @@ Instructions:
 
 # YOUR CODE HERE:
 
+age = input("Please enter your age: ")
+age = int(age)
 
+if age >= 20:
+    print("adult (20+)")
+elif age <= 13:
+    print("teenager (13-19)")
+else:
+    print("child (<13)")
 
+print()
 
 # ==============================================================
 # PART 3: WHILE LOOPS (Chapter 7)
@@ -77,8 +101,12 @@ Instructions:
 
 # YOUR CODE HERE:
 
+number = 1
+while number <=5:
+    print(number)
+    number += 1
 
-
+print()
 
 # Exercise 7: Write a while loop that asks the user to enter numbers.
 # Keep asking until they enter 'quit'.
@@ -87,8 +115,20 @@ Instructions:
 
 # YOUR CODE HERE:
 
+prompt = "\nEnter a number: "
+prompt += "\nEnter 'quit' to end the program "
 
+total_sum = 0
+numbers = ""
 
+while numbers != "quit":
+    numbers = input(prompt)
+    
+    if numbers != "quit":
+        total_sum += int(numbers)
+        print(numbers)
+
+print(f"The total sum is: {total_sum}")
 
 # ==============================================================
 # PART 4: COMBINING CONCEPTS
@@ -104,7 +144,20 @@ Instructions:
 
 # YOUR CODE HERE:
 
+contacts = {}
+active = True
 
+while active:
+    name = input("\nEnter a name (or 'done to finish): ")
+    
+    if name == "done":
+        active = False
+    else:
+        contact = input("What is their phone#?: ")
+        contacts[name] = contact
 
+print("\nContact Book")
+for name, contact in contacts.items():
+    print(f"{name}: {contact}")
 
 print("\n--- Homework Complete! ---")
