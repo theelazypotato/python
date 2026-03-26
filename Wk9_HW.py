@@ -113,7 +113,22 @@ print()
 #
 # After your class, create one Dog instance and call both methods.
 
+class Dog:
+    def __init__(self, name, breed):
+        self.name = name
+        self.breed = breed
+        
+    def sit(self):
+        print(f"{self.name} is now sitting.")
+    
+    def roll_over(self):
+        print(f"{self.name} rolled over!")
+    
+my_dog = Dog("Buddy", "Golden Retriever")
+my_dog.sit()
+my_dog.roll_over()
 
+print()
 # B2. Student Class
 # Create a class called 'Student' with:
 #     - __init__ that takes name and major
@@ -122,6 +137,18 @@ print()
 #
 # After your class, create one Student instance and call introduce().
 
+class Student:
+    def __init__ (self, name, major):
+        self.name = name
+        self.major = major
+    
+    def introduce(self):
+        print(f"Hi, I'm {self.name} and my major is {self.major}.")
+    
+my_student = Student("Raina", "Computer Undeclared")
+my_student.introduce()
+
+print()
 
 # B3. Rectangle Class
 # Create a class called 'Rectangle' with:
@@ -131,6 +158,18 @@ print()
 #
 # After your class, create one Rectangle and print its area.
 
+class Rectangle:
+    def __init__ (self, width, height):
+        self.width = width
+        self.height = height
+    
+    def area(self):
+        return self.width * self.height
+    
+my_rectangle = Rectangle(12, 3)
+print(f"The area of the rectangle is: {my_rectangle.area()}")
+
+print()
 
 # B4. Multiple Dogs
 # Using your Dog class from B1:
@@ -138,6 +177,18 @@ print()
 #     - Print each dog's name and breed using dot notation
 #     - Call sit() on one dog and roll_over() on another
 
+dog1 = Dog("Max", "Labrador")
+dog2 = Dog("Bella", "Poodle")
+dog3 = Dog("Charlie", "Beagle")
+
+print(f"Dog 1: {dog1.name}, {dog1.breed}")
+print(f"Dog 2: {dog2.name}, {dog2.breed}")
+print(f"Dog 3: {dog3.name}, {dog3.breed}")
+
+dog1.sit()
+dog2.roll_over()
+
+print()
 
 # B5. Multiple Rectangles
 # Using your Rectangle class from B3:
@@ -145,8 +196,24 @@ print()
 #     - Print the area of each one
 #     - Print which rectangle has the largest area
 
+rectangle1 = Rectangle(5, 4)
+rectangle2 = Rectangle(10, 2)
+rectangle3 = Rectangle(7, 3)
 
+print(f"Area of Rectangle 1: {rectangle1.area()}")
+print(f"Area of Rectangle 2: {rectangle2.area()}")
+print(f"Area of Rectangle 3: {rectangle3.area()}")
 
+areas = [rectangle1.area(), rectangle2.area(), rectangle3.area()]
+largest_area = max(areas)
+if largest_area == rectangle1.area():
+    print("Rectangle 1 has the largest area.")  
+elif largest_area == rectangle2.area():
+    print("Rectangle 2 has the largest area.")  
+else:
+    print("Rectangle 3 has the largest area.")  
+    
+print()
 
 # ============================================================
 # STRETCH (Optional)
