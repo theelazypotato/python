@@ -143,20 +143,21 @@ Example:
 
 # 8. What is your research question?
 research_question = """
-YOUR ANSWER HERE: ""
+YOUR ANSWER HERE: "How has the average winning percentage of MLB teams changed over time?"
 
 """
 
 # 9. Why is this question interesting or important?
 why_interesting = """
-YOUR ANSWER HERE:
+YOUR ANSWER HERE: "I'm curious about trends in baseball performance and whether teams are getting more competitive over time."
 
 """
 
 # 10. What do you predict the answer will be? (Your hypothesis)
 #     It's okay to be wrong! This is just your initial guess.
 hypothesis = """
-YOUR ANSWER HERE:
+YOUR ANSWER HERE: "I predict that the average winning percentage will have increased over time due to improvements in training, analytics, and player development."
+
 Example: "I predict that Manhattan restaurants will have more violations
 because there are more restaurants and more inspectors in Manhattan."
 """
@@ -169,7 +170,10 @@ because there are more restaurants and more inspectors in Manhattan."
 # 11. Which columns will you need to answer your question?
 #     List the specific column names from your dataset.
 key_columns = """
-YOUR ANSWER HERE:
+YOUR ANSWER HERE: "
+- year (to track changes over time)
+- winning_percentage (to measure team performance)"
+
 Example: "To answer my question, I need:
 - borough (to group restaurants by location)
 - score (to measure violations)
@@ -179,7 +183,8 @@ Example: "To answer my question, I need:
 # 12. What challenges do you anticipate?
 #     Think about: missing data, confusing values, things you'd need to clean up
 anticipated_challenges = """
-YOUR ANSWER HERE:
+YOUR ANSWER HERE: "MLB Lockouts, Shortened seasons, and Protesting/Strikes may cause some seasons to have fewer games, which could affect winning percentages. I'll need to decide how to handle those seasons in my analysis."
+
 Example: "I noticed some restaurants have blank grades - I'll need to
 decide whether to exclude them or mark them as 'pending'. Also, some
 scores seem unusually high (like 200+) which might be errors."
@@ -190,10 +195,10 @@ scores seem unusually high (like 200+) which might be errors."
 analysis_plan = """
 YOUR ANSWER HERE (check all that apply):
 
-[ ] Compare averages between groups (e.g., avg score by borough)
+[ X ] Compare averages between groups (e.g., avg score by borough)
 [ ] Count/percentage by category (e.g., % of each grade)
 [ ] Look for relationships between two numbers (e.g., price vs rating)
-[ ] Track changes over time (e.g., violations by year)
+[ X ] Track changes over time (e.g., violations by year)
 [ ] Other: _______________
 """
 
@@ -205,12 +210,12 @@ YOUR ANSWER HERE (check all that apply):
 """
 Before submitting, verify:
 
-[ ] I found a dataset with at least 100 rows and 5 columns
-[ ] I can open my dataset in a spreadsheet program
-[ ] I listed all column names and their types
-[ ] My research question is specific and answerable with this data
-[ ] I identified which columns I'll need for my analysis
-[ ] I saved my dataset file (you'll submit it with Step 2)
+[ X ] I found a dataset with at least 100 rows and 5 columns
+[ X ] I can open my dataset in a spreadsheet program
+[ X ] I listed all column names and their types
+[ X ] My research question is specific and answerable with this data
+[ X ] I identified which columns I'll need for my analysis
+[ X ] I saved my dataset file (you'll submit it with Step 2)
 
 SUBMIT: Just this file (step1_template.py with your answers)
         Keep your dataset ready for Step 2!
