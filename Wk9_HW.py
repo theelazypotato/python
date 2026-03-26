@@ -24,6 +24,8 @@ Submit this file with your solutions.
 #
 # Call it 3 times with different names
 
+# Example: "Hello, Raina!", "Hello, Sam!", "Hello, Oscar!"
+
 def greet(name):
     print(f"Hello, {name}!")
   
@@ -39,6 +41,8 @@ print()
 #
 # Test it: print the squares of 5, 10, and 7
 
+# Example: "The square of 5 is 25", "The square of 10 is 100", "The square of 7 is 49"
+
 def square(num):
     return num ** 2
 
@@ -53,6 +57,8 @@ print()
 #     - Returns the area (length * width)
 #
 # Test with several different dimensions
+
+# Example: "The area of a 5x3 rectangle is 15", "The area of a 10x2 rectangle is 20", "The area of a 7x4 rectangle is 28"
 
 def calculate_area(length,width):
     return length * width
@@ -72,6 +78,12 @@ print()
 #                  "White bread with cheese (not toasted)"
 #
 # Call it with: just bread, bread + filling, all three parameters
+
+# Example calls:
+# make_sandwich("Rye") -> "Rye bread with cheese (not toasted)"
+# make_sandwich("Sourdough", "ham") -> "Sourdough bread with ham (not toasted)"
+# make_sandwich("Whole Wheat", "turkey", True) -> "Whole Wheat bread with turkey (toasted)"
+
 def make_sandwich(bread, filling="cheese", toasted=False):
     toast_status = "toasted" if toasted else "not toasted"
     print(f"{bread} bread with {filling} ({toast_status})")
@@ -88,6 +100,13 @@ print()
 #
 # Use it in a loop to check these scores: [85, 55, 72, 48, 90]
 # Print which scores are passing and which are failing
+
+# Example output:
+# "85 is passing."
+# "55 is failing."
+# "72 is passing."
+# "48 is failing."
+# "90 is passing."
 
 def is_passing(score):
   return score >= 60
@@ -113,6 +132,10 @@ print()
 #
 # After your class, create one Dog instance and call both methods.
 
+# Example:
+# my_dog.sit() -> "Buddy is now sitting."
+# my_dog.roll_over() -> "Buddy rolled over!"
+
 class Dog:
     def __init__(self, name, breed):
         self.name = name
@@ -137,6 +160,8 @@ print()
 #
 # After your class, create one Student instance and call introduce().
 
+# Example: "Hi, I'm Raina and my major is Undeclared."
+
 class Student:
     def __init__ (self, name, major):
         self.name = name
@@ -145,7 +170,7 @@ class Student:
     def introduce(self):
         print(f"Hi, I'm {self.name} and my major is {self.major}.")
     
-my_student = Student("Raina", "Computer Undeclared")
+my_student = Student("Raina", "Undeclared")
 my_student.introduce()
 
 print()
@@ -157,6 +182,8 @@ print()
 #     - Method area(): returns width * height
 #
 # After your class, create one Rectangle and print its area.
+
+# Example: "The area of a 5x3 rectangle is 15"
 
 class Rectangle:
     def __init__ (self, width, height):
@@ -177,6 +204,13 @@ print()
 #     - Print each dog's name and breed using dot notation
 #     - Call sit() on one dog and roll_over() on another
 
+# Example:
+# Dog 1: Max, Labrador
+# Dog 2: Bella, Poodle
+# Dog 3: Charlie, Beagle
+# Dog 1: Max is now sitting.
+# Dog 2: Bella rolled over!
+
 dog1 = Dog("Max", "Labrador")
 dog2 = Dog("Bella", "Poodle")
 dog3 = Dog("Charlie", "Beagle")
@@ -196,9 +230,14 @@ print()
 #     - Print the area of each one
 #     - Print which rectangle has the largest area
 
+# Example:
+# Rectangle 1: 5x4, Area: 20
+# Rectangle 2: 10x6, Area: 60
+# Rectangle 3: 7x5, Area: 35
+
 rectangle1 = Rectangle(5, 4)
-rectangle2 = Rectangle(10, 2)
-rectangle3 = Rectangle(7, 3)
+rectangle2 = Rectangle(10, 6)
+rectangle3 = Rectangle(7, 5)
 
 print(f"Area of Rectangle 1: {rectangle1.area()}")
 print(f"Area of Rectangle 2: {rectangle2.area()}")
