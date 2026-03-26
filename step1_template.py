@@ -28,20 +28,16 @@ Submit this file with your answers filled in.
 # 1. What dataset did you choose?
 dataset_name = """
 YOUR ANSWER HERE: "MLB Stats 1901 - 2025"
-Example: "NYC Restaurant Inspections"
 """
 
 # 2. Where did you get it? (Include URL if online)
 dataset_source = """
 YOUR ANSWER HERE: "https://www.kaggle.com/datasets/diazk2/mlb-statistics-1901-present"
-Example: "NYC Open Data - https://data.cityofnewyork.us/..."
 """
 
 # 3. Why did you choose this dataset?
 why_this_dataset = """
 YOUR ANSWER HERE: "I'm interested in baseball statistics and I want to analyze team performance over time."
-Example: "I'm interested in food safety and I eat out a lot in NYC.
-I want to know which neighborhoods have the cleanest restaurants."
 """
 
 
@@ -55,13 +51,11 @@ I want to know which neighborhoods have the cleanest restaurants."
 # 4. How many rows (records) are in your dataset?
 num_rows = """
 YOUR ANSWER HERE: "2690 rows"
-Example: "27,450 rows"
 """
 
 # 5. How many columns are there?
 num_columns = """
 YOUR ANSWER HERE: "16 columns"
-Example: "12 columns"
 """
 
 # 6. List ALL the column names:
@@ -84,14 +78,6 @@ YOUR ANSWER HERE: "
 15. record_when_away
 16. record_against_top_50_percent"
 
-Example:
-1. restaurant_name
-2. borough
-3. cuisine_type
-4. inspection_date
-5. violation_code
-6. grade
-... (list all of them)
 """
 
 # 7. For each column, what type of data does it contain?
@@ -118,12 +104,6 @@ YOUR ANSWER HERE: "
 - record_when_away: Text (e.g., '40-41' wins-losses away)
 - record_against_top_50_percent: Text (e.g., '30-30' wins-losses against top half of teams)"
 
-Example:
-- restaurant_name: Text (name of the restaurant)
-- borough: Text (category - Manhattan, Brooklyn, etc.)
-- inspection_date: Date
-- score: Number (violation points)
-- grade: Text (category - A, B, C)
 """
 
 
@@ -158,8 +138,6 @@ YOUR ANSWER HERE: "I'm curious about trends in baseball performance and whether 
 hypothesis = """
 YOUR ANSWER HERE: "I predict that the average winning percentage will have increased over time due to improvements in training, analytics, and player development."
 
-Example: "I predict that Manhattan restaurants will have more violations
-because there are more restaurants and more inspectors in Manhattan."
 """
 
 
@@ -174,10 +152,6 @@ YOUR ANSWER HERE: "
 - year (to track changes over time)
 - winning_percentage (to measure team performance)"
 
-Example: "To answer my question, I need:
-- borough (to group restaurants by location)
-- score (to measure violations)
-- grade (to compare letter grades)"
 """
 
 # 12. What challenges do you anticipate?
@@ -185,9 +159,6 @@ Example: "To answer my question, I need:
 anticipated_challenges = """
 YOUR ANSWER HERE: "MLB Lockouts, Shortened seasons, and Protesting/Strikes may cause some seasons to have fewer games, which could affect winning percentages. I'll need to decide how to handle those seasons in my analysis."
 
-Example: "I noticed some restaurants have blank grades - I'll need to
-decide whether to exclude them or mark them as 'pending'. Also, some
-scores seem unusually high (like 200+) which might be errors."
 """
 
 # 13. What type of analysis will you do?
