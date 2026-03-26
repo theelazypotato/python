@@ -27,19 +27,19 @@ Submit this file with your answers filled in.
 
 # 1. What dataset did you choose?
 dataset_name = """
-YOUR ANSWER HERE:
+YOUR ANSWER HERE: "MLB Stats 1901 - 2025"
 Example: "NYC Restaurant Inspections"
 """
 
 # 2. Where did you get it? (Include URL if online)
 dataset_source = """
-YOUR ANSWER HERE:
+YOUR ANSWER HERE: "https://www.kaggle.com/datasets/diazk2/mlb-statistics-1901-present"
 Example: "NYC Open Data - https://data.cityofnewyork.us/..."
 """
 
 # 3. Why did you choose this dataset?
 why_this_dataset = """
-YOUR ANSWER HERE:
+YOUR ANSWER HERE: "I'm interested in baseball statistics and I want to analyze team performance over time."
 Example: "I'm interested in food safety and I eat out a lot in NYC.
 I want to know which neighborhoods have the cleanest restaurants."
 """
@@ -54,19 +54,36 @@ I want to know which neighborhoods have the cleanest restaurants."
 
 # 4. How many rows (records) are in your dataset?
 num_rows = """
-YOUR ANSWER HERE:
+YOUR ANSWER HERE: "2690 rows"
 Example: "27,450 rows"
 """
 
 # 5. How many columns are there?
 num_columns = """
-YOUR ANSWER HERE:
+YOUR ANSWER HERE: "16 columns"
 Example: "12 columns"
 """
 
 # 6. List ALL the column names:
 column_names = """
-YOUR ANSWER HERE:
+YOUR ANSWER HERE: "
+1. team_name
+2. year
+3. wins
+4. losses
+5. winning_percentage
+6. games_behind
+7. wild_card_games_behind
+8. record_in_the_last_10_games
+9. current_streak
+10. runs_scored
+11. runs_allowed
+12. run_differential
+13. expected_win_loss_record
+14. record_at_home
+15. record_when_away
+16. record_against_top_50_percent"
+
 Example:
 1. restaurant_name
 2. borough
@@ -83,7 +100,24 @@ Example:
 #    - Dates
 #    - Yes/No (true/false)
 column_types = """
-YOUR ANSWER HERE:
+YOUR ANSWER HERE: "
+- team_name: Text (name of the baseball team)
+- year: Number (season year)
+- wins: Number (total wins in the season)
+- losses: Number (total losses in the season)
+- winning_percentage: Number (wins divided by total games)
+- games_behind: Number (how many games behind the leader)
+- wild_card_games_behind: Number (how many games behind the wild card spot)
+- record_in_the_last_10_games: Text (e.g., '6-4'
+- current_streak: Text (e.g., 'W3' for 3 wins in a row)
+- runs_scored: Number (total runs scored in the season)
+- runs_allowed: Number (total runs allowed in the season)
+- run_differential: Number (runs scored minus runs allowed)
+- expected_win_loss_record: Text (e.g., '80-82' based on runs)
+- record_at_home: Text (e.g., '40-41' wins-losses at home)
+- record_when_away: Text (e.g., '40-41' wins-losses away)
+- record_against_top_50_percent: Text (e.g., '30-30' wins-losses against top half of teams)"
+
 Example:
 - restaurant_name: Text (name of the restaurant)
 - borough: Text (category - Manhattan, Brooklyn, etc.)
@@ -109,7 +143,7 @@ Example:
 
 # 8. What is your research question?
 research_question = """
-YOUR ANSWER HERE:
+YOUR ANSWER HERE: ""
 
 """
 
