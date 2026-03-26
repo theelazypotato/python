@@ -24,7 +24,14 @@ Submit this file with your solutions.
 #
 # Call it 3 times with different names
 
+def greet(name):
+    print(f"Hello, {name}!")
+  
+greet("Raina")
+greet("Sam")
+greet("Oscar")
 
+print()
 # A2. Function with Return Value
 # Create a function called 'square' that:
 #     - Takes a number as a parameter
@@ -32,7 +39,14 @@ Submit this file with your solutions.
 #
 # Test it: print the squares of 5, 10, and 7
 
+def square(num):
+    return num ** 2
 
+print(square(5))
+print(square(10))
+print(square(7))
+
+print()
 # A3. Multiple Parameters
 # Create a function called 'calculate_area' that:
 #     - Takes length and width as parameters
@@ -40,7 +54,14 @@ Submit this file with your solutions.
 #
 # Test with several different dimensions
 
+def calculate_area(length,width):
+    return length * width
+  
+print(calculate_area(5, 3))
+print(calculate_area(10, 2))
+print(calculate_area(7, 4))
 
+print()
 # A4. Default Parameter Values
 # Create a function called 'make_sandwich' that:
 #     - Takes bread (required)
@@ -51,8 +72,15 @@ Submit this file with your solutions.
 #                  "White bread with cheese (not toasted)"
 #
 # Call it with: just bread, bread + filling, all three parameters
+def make_sandwich(bread, filling="cheese", toasted=False):
+    toast_status = "toasted" if toasted else "not toasted"
+    print(f"{bread} bread with {filling} ({toast_status})")
 
+make_sandwich("Rye")
+make_sandwich("Sourdough", "ham")
+make_sandwich("Whole Wheat", "turkey", True)
 
+print()
 # A5. Using Return Values
 # Create a function called 'is_passing' that:
 #     - Takes a score
@@ -61,9 +89,17 @@ Submit this file with your solutions.
 # Use it in a loop to check these scores: [85, 55, 72, 48, 90]
 # Print which scores are passing and which are failing
 
+def is_passing(score):
+  return score >= 60
 
+scores = [85, 55, 72, 48, 90]
+for score in scores:
+  if is_passing(score):
+    print(f"{score} is passing.")
+  else:
+    print(f"{score} is failing.")
 
-
+print()
 # ============================================================
 # PART B: Classes (Chapter 9)
 # ============================================================
