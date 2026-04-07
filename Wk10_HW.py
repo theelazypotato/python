@@ -23,19 +23,49 @@ Submit this file with your solutions.
 # Write them to a file called 'favorites.txt', one per line.
 # After writing, print "Saved [count] favorites to favorites.txt"
 
+favorites = ["The Matrix", "Inception", "Interstellar", "The Lord of the Rings", "The Dark Knight"]
 
+with open("favorites.txt", "w") as f:
+    for item in favorites:
+        f.write(item + "\n")
+
+print(f"Saved {len(favorites)} favorites to favorites.txt")
+print()
 # A2. Read a File
 # Read 'favorites.txt' back in and print each line.
 # Also print the total number of lines in the file.
 #
 # Hint: Use .strip() on each line to remove the newline character.
 
+try:
+    with open("favorites.txt", "r") as f:
+        line = f.readline()
+        count = 0
+        while line:
+            print(line.strip())
+            count += 1
+            line = f.readline()
+    print(f"Total lines in favorites.txt: {count}")
+except FileNotFoundError:
+    print("favorites.txt not found.")
 
 # A3. Append to a File
 # Add 3 more items to 'favorites.txt' using append mode ('a').
 # Then read the file again and print the updated contents.
 # Print the new total count.
 
+try:
+    with open("favorites.txt", "a") as f:
+        f.write("Pulp Fiction\n")
+        f.write("The Shawshank Redemption\n")
+        f.write("The Godfather\n")
+    with open("favorites.txt", "r") as f:
+        lines = f.readlines()
+        for line in lines:
+            print(line.strip())
+    print(f"Total lines in favorites.txt: {len(lines)}")
+except FileNotFoundError:
+    print("favorites.txt not found.")
 
 # A4. Process a File
 # The code below creates a file called 'scores.txt' with student scores.

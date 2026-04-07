@@ -1,0 +1,8 @@
+25
+not a number
+30
+
+15
+oops
+40
+10
