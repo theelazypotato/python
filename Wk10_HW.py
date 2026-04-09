@@ -87,6 +87,7 @@ print("Created scores.txt")
 # YOUR CODE HERE - read and process scores.txt
 
 
+
 # A5. Write a Report
 # Using the data from scores.txt, write a summary report to 'report.txt'.
 # The report should include:
